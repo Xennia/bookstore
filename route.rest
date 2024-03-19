@@ -1,0 +1,54 @@
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/books/65f5237e71f22db7818441ee
+
+###
+
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "Interview with the vampire",
+    "author": "Anne Rice",
+    "publicationDate": "Aug 30 2024",
+    "ISBN": 45787
+}
+
+###
+
+POST http://localhost:3000/authors
+Content-Type: application/json
+
+{
+    "name": "Stephen King",
+    "books": ["It", "Lost Boys", "Better Half"],
+    "biography": "Stephen Edwin King is an American author of horror, supernatural fiction, suspense, crime, science-fiction, and fantasy novels."
+}
+
+###
+
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+    "name": "Adam Griffin"
+    
+}
+
+###
+
+PATCH http://localhost:3000/users/65f5aae9967679db5f54f18d
+Content-Type: application/json
+
+{
+    "email": "xeniab@me.com"
+   
+}
+
+###
+
+DELETE http://localhost:3000/users/65f537077ee33f3c0ec31024
+
+
